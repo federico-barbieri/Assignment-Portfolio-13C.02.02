@@ -68,7 +68,6 @@ nav{
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  font-family: var(--font-family2);
 }
 
 nav > ul {
@@ -76,15 +75,30 @@ nav > ul {
   width: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   font-family: var(--font-family2);
   font-size: 2rem;
   color: var(--main-font-color);
 }
 
-nav > ul > li{
-  list-style-type: none;
+@media only screen and (max-width: 1000px){
+  nav > ul {
+      font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  nav > ul {
+      flex-direction: column;
+
+  }
+}
+
+@media only screen and (max-width: 300px){
+  nav > ul {
+      font-size: 1rem;
+  }
 }
 
 /* about */
@@ -113,6 +127,26 @@ nav > ul > li{
   font-family: var(--font-family);
   font-size: var(--h1-size);
   color: var(--main-font-color);
+}
+
+@media only screen and (max-width: 1000px){
+  .about-title{
+      font-family: var(--font-family);
+      font-size: 4rem;
+      padding: 1rem;
+      margin-top: 3rem;
+  
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .about-title{
+      font-family: var(--font-family);
+      font-size: 2rem;
+      padding: 1rem;
+      margin-top: 3rem;
+  
+  }
 }
 
 /* process */
@@ -154,6 +188,93 @@ justify-content: base;
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+@media only screen and (max-width: 1000px){
+  /* process */
+
+#process{
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .process-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    text-align: left;
+  }
+  .process-text > h2{
+    font-size: var(--h2-size);
+  }
+  
+  .process-text > p {
+    font-size: var(--p-size);
+  }
+  
+  .process-img{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .process-img > img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  /* process */
+
+#process{
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .process-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+  }
+  .process-text > h2{
+    font-size: 1.5rem;
+  }
+  
+  .process-text > p {
+    font-size: 1rem;
+  }
+  
+  .process-img{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .process-img > img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 /* dark */
@@ -198,6 +319,92 @@ justify-content: base;
   .dark-mode-img{
     max-width: 100%;
     height: auto;
+  }
+
+  @media only screen and (max-width: 1000px){
+    /* dark */
+  
+  #dark{
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .dark-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: auto;
+    }
+    .dark-text > h2{
+      font-size: var(--h2-size);
+    }
+    
+    .dark-text > p {
+      font-size: var(--p-size);
+    }
+    
+    .dark-img{
+      width: 90%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .dark-img > img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 500px){
+    /* dark */
+  
+  #dark{
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .dark-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: auto;
+    }
+    .dark-text > h2{
+      font-size: 1.5rem;
+    }
+    
+    .dark-text > p {
+      font-size: 1rem;
+    }
+    
+    .dark-img{
+      width: 90%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .dark-img > img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
   }
 
   /* animations */
@@ -247,6 +454,92 @@ justify-content: base;
       height: auto;
   }
 
+  @media only screen and (max-width: 1000px){
+    /* animations */
+  
+  #animations{
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .animations-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: auto;
+    }
+    .animations-text > h2{
+      font-size: var(--h2-size);
+    }
+    
+    .animations-text > p {
+      font-size: var(--p-size);
+    }
+    
+    .animations-img{
+      width: 90%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .animations-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 500px){
+    /* animations */
+  
+  #animations{
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .animations-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: auto;
+    }
+    .animations-text > h2{
+      font-size: 1.5rem;
+    }
+    
+    .animations-text > p {
+      font-size: 1rem;
+    }
+    
+    .animations-img{
+      width: 90%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .animations-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
   /* btn */
 
 .back-btn{
@@ -285,13 +578,7 @@ footer > p {
   text-align: center;
 }
 
-@media only screen and (max-width: 400px){
-  footer > p {
-      font-size: 1rem;
-      padding: 0;
-      width: 70%;
-  }
-}
+
 
 
 
