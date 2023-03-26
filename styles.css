@@ -173,6 +173,7 @@ h2{
     font-size: var(--h2-size);
     font-family: var(--font-family);
     margin: 7rem auto 1rem auto;
+    opacity: 0.5;
 }
 
 .about-p{
