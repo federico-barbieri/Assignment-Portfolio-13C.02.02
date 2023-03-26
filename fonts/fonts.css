@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 16px;
+  --background: #141E27;
+  --lighter-blue: #2c3e50;
+  --new-blue: #32ccff;
+  --white: #ffffff;
+  --paper: #f5edd9e9;
+  --black: #000000;
+  --font-family: 'Aboreto', cursive;
+  --font-family2: 'Noto Sans JP', sans-serif;
+  --danishRed: #C8102E;
+  --main-background: #ede9ea;
+  --main-font-color: #3b3a3c;
+  --main-accent: #d96061;
+  --main-background-darker: #e9ebeb;
+  --main-background-darker2: #c9cccc;
+  --p-size: 1.5rem;
+  --h1-size: 6rem;
+  --h2-size: 4rem;
+  --h3-size: 3rem;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+#container{
+  width: 100%;
+  height: auto;
+  background-color: var(--main-background);
+  font-family: var(--font-family2);
+  overflow: hidden;
+}
+
+main{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  height: auto;
+}
+
+img{
+  filter: drop-shadow(10px 12px 10px black);
+
+}
+
+/* HEADER */
+
+nav{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+nav > ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: var(--font-family2);
+  font-size: 2rem;
+  color: var(--main-font-color);
+}
+
+nav > ul > li{
+  list-style-type: none;
+}
+
+/* about */
+
+#about{
+  background-color: var(--main-background);
+  color: var(--main-font-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+    
+}
+
+.main-title{
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title{
+  font-family: var(--font-family);
+  font-size: var(--h1-size);
+  color: var(--main-font-color);
+}
+
+/* process */
+
+#process{
+width: 80vw;
+height: 50vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.process-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.process-text > h2{
+  font-size: var(--h2-size);
+}
+
+.process-text > p {
+  font-size: var(--p-size);
+}
+
+.process-img{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-img > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* flex */
+
+#flex{
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+  }
+  
+  .flex-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .flex-text > h2{
+    font-size: var(--h2-size);
+  }
+  
+  .flex-text > p {
+    font-size: var(--p-size);
+    max-width: 45ch;
+    text-align: left;
+  }
+  
+  .flex-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-img > img {
+    max-width: 20%;
+    height: auto;
+  }
+
+  /* types */ 
+
+  .types{
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+  }
+
+  .types > img{
+    max-width: 100%;
+    filter: drop-shadow(10px 12px 10px black);
+    border-radius: 10px;
+  }
+
+  /* btn */
+
+.back-btn{
+  cursor: pointer;
+  background-color: var(--main-background);
+  padding: 0.5rem 1rem;
+  transition: all 0.5s;
+  margin: 5rem auto;
+}
+
+.back-btn:hover{
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 4px black);
+}
+
+
+
+ /* footer */
+
+footer{
+  height: 20vh;
+  width: 100vw;
+  color: var(--main-font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-background-darker);
+  font-family: var(--font-family2);
+}
+
+footer > p {
+  font-size: var(--p-size);
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px){
+  footer > p {
+      font-size: 1rem;
+      padding: 0;
+      width: 70%;
+  }
+}
+
+
+
+
